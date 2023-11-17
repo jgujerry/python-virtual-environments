@@ -3,6 +3,13 @@
 Since version 3.3, Python has come with a built-in module [venv](https://docs.python.org/3/library/venv.html) for the creation of virtual environments.
 
 
+## How to install?
+`venv` is a built-in module of Python, normally you do not need to install. However, please note that in some Linux distributions, like Ubuntu, the `venv` module is not installed together with the Python installation. It needs to be installed separately.
+
+```bash
+$ sudo apt install python3.12-venv
+```
+
 ## How to use it?
 
 #### 1. Create a venv
@@ -167,12 +174,6 @@ $ python3.11 -m venv ./testenv11
 
 ```bash
 $ python3.12 -m venv ./testenv12
-```
-
-Please note that in some Linux distributions, like Ubuntu, the `venv` module is not installed together with the Python installation. It needs to be installed separately.
-
-```bash
-$ sudo apt install python3.12-venv
 ```
 
 Happy coding!
