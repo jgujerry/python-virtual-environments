@@ -6,14 +6,16 @@ A beginner's guide on effectively managing Python virtual environments.
 
 Popular Python virtual environment management tools
 * [venv](venv/README.md)
-* virtualenv
+* [virtualenv](virtualenv/README.md)
 * virtualenv + virtualenvwrapper
 * pyenv
 * pipenv
 * poetry
+* pip-tools
 * pipx
 * pew
 * tox
+* nox
 * conda
 
 Happy coding!
