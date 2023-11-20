@@ -86,7 +86,7 @@ Activate the virtualenv environment,
 
 ```bash
 # Replace <vent> by the target directory containing the virtual environment.
-$ source <venv>/bin/activate
+$ source testenv/bin/activate
 ```
 
 The inovation of the activation script is platform-specific.
@@ -94,25 +94,25 @@ The inovation of the activation script is platform-specific.
 On Unix or MacOS,
 ```bash
 # bash/zsh
-$ source <venv>/bin/activate
+$ source testenv/bin/activate
 
 # fish
-$ source <venv>/bin/activate.fish
+$ source testenv/bin/activate.fish
 
 # csh/tcsh
-$ source <venv>/bin/activate.csh
+$ source testenv/bin/activate.csh
 
 # PowerShell
-$ <venv>/bin/Activate.ps1
+$ testenv/bin/Activate.ps1
 ```
 
 On Windows,
 ```
 # cmd.exe
-C:\> <venv>\Scripts\activate.bat
+C:\> testenv\Scripts\activate.bat
 
 # PowerShell
-PS C:\> <venv>\Scripts\Activate.ps1
+PS C:\> testenv\Scripts\Activate.ps1
 ```
 
 #### 3. Manage Python packages
@@ -124,7 +124,7 @@ $ pip install --upgrade pip
 
 Install a single package,
 ```bash
-$ pip install <pthon-package>
+$ pip install <python-package>
 ```
 
 If you have a `requirements.txt` file,
@@ -135,7 +135,7 @@ $ pip install -r requirements.txt
 To install a package,
 
 ```bash
-$ pip uninstall <pthon-package>
+$ pip uninstall <python-package>
 ```
 
 
