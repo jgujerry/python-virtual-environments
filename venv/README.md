@@ -12,7 +12,7 @@ $ sudo apt install python3.12-venv
 
 ## How to use it?
 
-#### 1. Create a venv
+#### 1. Create a virtual environment
 
 ```bash
 $ python -m venv /path/to/testenv
@@ -80,7 +80,7 @@ version = 3.10.6
 The `home` key pointing to the Python installation from which the command was run.
 
 
-#### 2. Activate the venv
+#### 2. Activate the virtual environment
 
 Activate the virtualenv environment,
 
@@ -139,7 +139,7 @@ $ pip uninstall <python-package>
 ```
 
 
-#### 4. Deactivate the venv
+#### 4. Deactivate the virtual environment
 When not using the virtual environment, you can terminate the session where you are using it.
 
 ```bash
@@ -149,7 +149,7 @@ $ deactivate
 Windows users on the Command Prompt need to run `deactivate.bat` from the `Scripts` subdirectory.
 
 
-#### 5. Remove the venv
+#### 5. Remove the virtual environment
 
 Python virtual environments are self-contained. When it's no longer needed, then you can deactivate it, then just delete the directory of virtual environment.
 
@@ -175,5 +175,7 @@ $ python3.11 -m venv ./testenv11
 ```bash
 $ python3.12 -m venv ./testenv12
 ```
+
+For more information about `venv`, please refer to the [official documentation](https://docs.python.org/3/library/venv.html)
 
 Happy coding!
