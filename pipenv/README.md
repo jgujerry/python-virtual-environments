@@ -47,22 +47,9 @@ After entering the project directory, then run the following command to create t
 
 ```bash
 $ pipenv --python 3.12
-
-Creating a virtualenv for this project...
-Pipfile: ~/myapp/Pipfile
-Using /usr/bin/python3.12 (3.12.0) to create virtualenv...
-⠙ Creating virtual environment...created virtual environment CPython3.12.0.final.0-64 in 90ms
-  creator CPython3Posix(dest=~/.virtualenvs/myapp-SH-hhpBV, clear=False, no_vcs_ignore=False, global=False)
-  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=~/.local/share/virtualenv)
-    added seed packages: pip==23.3.1
-  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
-
-✔ Successfully created virtual environment!
-Virtualenv location: ~/.virtualenvs/myapp-SH-hhpBV
-Creating a Pipfile for this project
 ```
 
-What are the outputs?
+On my side, the outputs include:
 * The virtual environment is created under `.virtualenvs` directory which is my `virtualenv`'s default installation location.
 * The virtual environment name is `myapp-SH-hhpBV`, which is the directory name of my project `myapp` plus the hash of full path to the project's root.
 * `Pipfile` is created under the project directory.
@@ -70,6 +57,14 @@ What are the outputs?
 Please notice that the outputs of your system maybe different, but the idea here is same.
 
 You can control the behavior of virtual environment creation by configuring related environment variables.For more configuration details, please see the documentation - [Configuration With Environment Variables](https://docs.pipenv.org/advanced/#configuration-with-environment-variables)
+
+Another method of virtual environment creation is to run the `shell` command, like this:
+
+```bash
+$ python shell
+```
+
+This will create a virtual environment if one does not exist before entering the shell environment. And, the Python version is the default version on your system.
 
 
 #### 2. Activate the virtual environment
@@ -79,7 +74,7 @@ Run the `shell` command to activate the virtual environment,
 $ pipenv shell
 ```
 
-This will create a virtual environment if one does not exist, otherwise, it will just spawn a shell in existing virtual environment to isolate the development of the application.
+It would spawn a shell in existing virtual environment to isolate the development of the application.
 
 
 #### 3. Manage Python packages
@@ -146,7 +141,7 @@ $ pipenv --rm
 ```
 
 Please note that, after removing the virtual environment, the `Pipfile` and `Pipfile.lock` files would not 
-be removed from your project directory. You need manually delete these files if need.
+be removed from your project directory, and you need manually delete these files if need.
 
 ## Different Python versions?
 
