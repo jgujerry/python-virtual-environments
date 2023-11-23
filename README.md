@@ -10,12 +10,12 @@ Popular Python virtual environment management tools
 * [3] [virtualenv + virtualenvwrapper](virtualenv+virtualenwrapper/README.md)
 * [4] [pipenv](pipenv/README.md)
 * poetry
-* pip-tools
-* pipx
 * pew
+* pyenv + virtualenv
+* conda
+* hatch
+* pdm + venv, virtualenv, conda
 * tox
 * nox
-* pyenv
-* conda
 
 Happy coding!
