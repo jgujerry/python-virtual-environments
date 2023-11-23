@@ -8,14 +8,14 @@ Popular Python virtual environment management tools
 * [1] [venv](venv/README.md)
 * [2] [virtualenv](virtualenv/README.md)
 * [3] [virtualenv + virtualenvwrapper](virtualenv+virtualenwrapper/README.md)
-* pyenv
-* pipenv
+* [4] [pipenv](pipenv/README.md)
 * poetry
 * pip-tools
 * pipx
 * pew
 * tox
 * nox
+* pyenv
 * conda
 
 Happy coding!
