@@ -146,8 +146,8 @@ be removed from your project directory, and you need manually delete these files
 ## Different Python versions?
 
 One best practice with virtual environment creation is always specify the Python version.
-
 The option `--python` could be used with `pipenv` to specify the Python version, for examples,
+if you have multiple versions of Python installed on your system, you could do like this:
 
 ```bash
 $ pipenv --python 3.10
