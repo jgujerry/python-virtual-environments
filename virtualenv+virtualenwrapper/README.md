@@ -121,6 +121,22 @@ Run the following command to remove the virtual environment,
 $ rmvirtualenv testenv
 ```
 
+## Different Python versions
+
+If there are multiple Python versions installed on your system, then you could specify a version with `-p/--python` when creating the virtual environment.
+
+```bash
+$ mkvirtualenv -p python3.10 testenv10
+```
+
+```bash
+$ mkvirtualenv -p python3.11 testenv11
+```
+
+```bash
+$ mkvirtualenv -p python3.12 testenv12
+```
+
 For more details, please refer to the [official documentation](https://virtualenvwrapper.readthedocs.io/en/latest/).
 
 Happy coding!
