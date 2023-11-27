@@ -186,6 +186,6 @@ $ poetry env use python3.11
 $ poetry env use python3.12
 ```
 
-For more information about Python virtual environment and dependency management, please see the [official documentation](https://python-poetry.org/docs/).
+For more information about poetry, please see the [official documentation](https://python-poetry.org/docs/).
 
 Happy coding!
