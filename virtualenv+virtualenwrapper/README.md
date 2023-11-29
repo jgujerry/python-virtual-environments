@@ -137,6 +137,6 @@ $ mkvirtualenv -p python3.11 testenv11
 $ mkvirtualenv -p python3.12 testenv12
 ```
 
-For more details, please refer to the [official documentation](https://virtualenvwrapper.readthedocs.io/en/latest/).
+For more details about virtialenvwrapper, please refer to the [official documentation](https://virtualenvwrapper.readthedocs.io/en/latest/).
 
 Happy coding!
