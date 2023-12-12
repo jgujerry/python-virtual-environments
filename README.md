@@ -12,7 +12,7 @@ Popular Python virtual environment management tools:
 * [5] [poetry](poetry/README.md)
 * [6] [pyenv + virtualenv](pyenv+virtualenv/README.md)
 * [7] [conda](conda/README.md)
-* [8] [hatch](hatch/README.md)
+* [8] [hatch](hatch/README.md) Continuing
 * pdm
 * pew
 * tox
