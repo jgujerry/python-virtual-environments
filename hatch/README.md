@@ -30,9 +30,41 @@ For more information about Hatch installtion, please see the [official documenta
 
 ## How to use it?
 
+If you like to use Hatch to manage your Python project, then firstly you need to create a new project or initialize an existing project using Hatch.
+
+Create a new project,
+
+```bash
+$ hatch new <project-name>
+```
+
+For example,
+```
+hatch-example
+├── LICENSE.txt
+├── pyproject.toml
+├── README.md
+├── src
+│   └── hatch_example
+│       ├── __about__.
+│       └── __init__.p
+└── tests
+    └── __init__.py
+
+3 directories, 6 files
+```
+
+Initialize an existing project
+
+```bash
+$ hatch new --init
+```
+
+wchich would create a `pyproject.toml` file in the existing project.
+
 #### 1. Create a virtual environment
 
-You can create virtual environments by using the following command,
+Within the Hatch project, you can create virtual environments by using the following command,
 ```bash
 $ hatch env create
 ```
