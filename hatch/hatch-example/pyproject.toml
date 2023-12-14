@@ -11,7 +11,7 @@ requires-python = ">=3.7"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "jerrygubytes", email = "jianligu3@gmail.com" },
+  { name = "jgujerry", email = "jianligu3@gmail.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -38,6 +38,7 @@ path = "src/hatch_example/__about__.py"
 dependencies = [
   "coverage[toml]>=6.5",
   "pytest",
+  "requests"
 ]
 [tool.hatch.envs.default.scripts]
 test = "pytest {args:tests}"
@@ -52,7 +53,7 @@ cov = [
 ]
 
 [[tool.hatch.envs.all.matrix]]
-python = ["3.7", "3.8", "3.9", "3.10", "3.11"]
+python = ["3.9", "3.10", "3.11"]
 
 [tool.hatch.envs.lint]
 detached = true

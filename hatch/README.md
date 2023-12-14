@@ -54,7 +54,7 @@ hatch-example
 3 directories, 6 files
 ```
 
-Initialize an existing project
+Initialize an existing project,
 
 ```bash
 $ hatch new --init
@@ -62,11 +62,18 @@ $ hatch new --init
 
 wchich would create a `pyproject.toml` file in the existing project.
 
+When we start the new `hatch-example` project, hatch creates a `default` virtual environment, any
+dependencies added to the `dependencies` section of `pyproject.toml` will be installed into the `default` environment.
+
+The main feature of Hatch is that it could create multiple environments for the same project. 
+A common use case is to have a `test` environment
+where testing dependencies are available, and/or a `docs` environment that contains dependencies to generate documentation.
+
 #### 1. Create a virtual environment
 
-Within the Hatch project, you can create virtual environments by using the following command,
+Within the Hatch project, you can create virtual environments which are defined in `pyproject.toml` by using the following command,
 ```bash
-$ hatch env create
+$ hatch env create <envname>
 ```
 
 Actually, you never need to manually create the environment, as spawning a shell or running commands within a project will automatically
@@ -92,6 +99,16 @@ $ hatch shell
 
 #### 3. Manage Python packages
 
+At the time of writing, Hatch does not support dependency lock files, this feature is on roadmap, but until then you will need to
+use `pip`, `pip-tools`, or other package management tools alongside Hatch.
+
+Here, we use `pip` to manage Python packages,
+
+```bash
+$ pip install <package-name>
+```
+
+
 #### 4. Deactivate the virtual environment
 
 You can type `exit` to leave the environment,
@@ -103,7 +120,7 @@ $ exit
 
 You can remove a single virtual environment by using this command:
 ```bash
-$ hatch env remove
+$ hatch env remove <envname>
 ```
 
 If you try to remove all of a project's environments by using this command:
