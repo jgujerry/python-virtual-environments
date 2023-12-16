@@ -76,13 +76,48 @@ Within the Hatch project, you can create virtual environments which are defined 
 $ hatch env create <envname>
 ```
 
-Actually, you never need to manually create the environment, as spawning a shell or running commands within a project will automatically
-trigger the environment creation.
+Actually, you never need to manually create the environment, as spawning a shell (see 2 activate the virtual environment) or running commands within a project will automatically trigger the environment creation.
 
-Where the virtual environments would be created? Well, it depends on the operation systems you are using. For my case, I am using Ubuntu,
-the directory that contains the virtual environments are:
+Where the virtual environments would be created? It's determined by the following heuristic order:
+- The `patch` option
+- configured `virtual` environment directory
+
+In my case, the directory that contains the virtual environments are:
 ```bash
 ~/.local/share/hatch/env/virtual
+```
+
+e.g.
+
+```bash
+~/.local/share/hatch/env/virtual/hatch-example/
+└── qrnKROyH
+    └── hatch-example
+        ├── bin
+        │   ├── activate
+        │   ├── activate.csh
+        │   ├── activate.fish
+        │   ├── activate.nu
+        │   ├── activate.ps1
+        │   ├── activate_this.py
+        │   ├── coverage
+        │   ├── coverage3
+        │   ├── coverage-3.12
+        │   ├── normalizer
+        │   ├── pip
+        │   ├── pip3
+        │   ├── pip-3.12
+        │   ├── pip3.12
+        │   ├── py.test
+        │   ├── pytest
+        │   ├── python -> /home/jianli/.pyenv/versions/3.12.0/bin/python
+        │   ├── python3 -> python
+        │   └── python3.12 -> python
+        ├── lib
+        │   └── python3.12
+        └── pyvenv.cfg
+
+5 directories, 20 files
 ```
 
 #### 2. Activate the virtual environment
@@ -99,14 +134,12 @@ $ hatch shell
 
 #### 3. Manage Python packages
 
-At the time of writing, Hatch does not support dependency lock files, this feature is on roadmap, but until then you will need to
+When you run `hatch shell`, Hatch will automatically spawn the environment and install the Python packages listed in `dependencies`.
+
+In active state of the environment, at the time of writing, Hatch does not support dependency lock files, this feature is on roadmap, but until then you will need to
 use `pip`, `pip-tools`, or other package management tools alongside Hatch.
 
-Here, we use `pip` to manage Python packages,
-
-```bash
-$ pip install <package-name>
-```
+And, for now you will need to hand-curate the dependencies in `pyproject.toml`.
 
 
 #### 4. Deactivate the virtual environment
@@ -130,3 +163,11 @@ $ hatch env prune
 
 ## Different Python versions?
 
+Virtual environments necessarily require a parent installtion of Python. The Python choice used to create the environment is determined by the version of Python found on your system, or you can set `HATCH_PYTHON` environment variable.
+
+```bash
+export HATCH_PYTHON=/usr/bin/python3.11
+```
+
+If no version has been chosen, the resolver will try to find a version that matches
+the version of Python that Hatch is currently running on.
