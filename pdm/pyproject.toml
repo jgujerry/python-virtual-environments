@@ -1,0 +1,17 @@
+[project]
+name = "pdm-example"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "jgujerry", email = "j*@gmail.com"},
+]
+dependencies = [
+    "requests>=2.31.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+package-type = "application"
