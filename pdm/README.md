@@ -53,7 +53,28 @@ To start with, create a new `pdm` project,
 $ pdm init
 ```
 
-You will need to answer a few questions to help `pdm` to initialize a project with `pyproject.toml` file.
+You will need to answer a few questions to help `pdm` to initialize a project with `pyproject.toml` file. For example,
+
+```
+[project]
+name = "pdm-example"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "jgujerry", email = "j*@gmail.com"},
+]
+dependencies = [
+    "requests>=2.31.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+package-type = "application"
+
+```
 
 #### 1. Create a virtual environment
 
@@ -61,17 +82,42 @@ You will need to answer a few questions to help `pdm` to initialize a project wi
 $ pdm venv create --name <envname>
 ```
 
+You can create multiple virtual environments for one project.
+
+Where the virtual environments got created? 
+* If no `--name` was specified, `pdm` will create the `.venv` under the project directory.
+* Otherwise, if the `venv.location` configuration was defined, the virtualenvs would go there.
+* If no `venv.location` configuration defined, they would be created under the shared directory of your system.
+
+On my Ubuntu system, they are created under this location:
+```bash
+$ ~/.local/share/pdm/venvs/
+```
+
 #### 2. Activate the virtual environment
 
+Go the project directory, run the following command to list all available virtual environments with the project,
+```bash
+$ pdm venv list
+```
+
+Now you can choose the virtual environment name and activate it using this command:
 ```bash
 $ eval $(pdm venv activate <envname>)
 ```
+
+Please note that `pdm venv activate` only print the activation command, use `eval` to run it.
 
 #### 3. Manage Python packages
 
 Add Python packages to project,
 ```bash
 $ pdm add <package1> <package2> ...
+```
+
+To add all dependencies listed in `pyproject.toml`, run this:
+```bash
+$ pdm install
 ```
 
 Remove Python packages from project,
@@ -87,11 +133,22 @@ $ pdm update <package1> <package2>
 
 #### 4. Deactivate the virtual environment
 
+Run this command to deactivate the virtual environment,
+
+```bash
+$ deactivate
+```
 
 #### 5. Remove the virtual environment
 
+To remove given virtual environment, using this command:
 ```bash
 $ pdm venv remove <envname>
+```
+
+To purge all created virtual environments, run this command:
+```bash
+$ pdm venv purge
 ```
 
 ## Different Python versions?
@@ -116,10 +173,21 @@ Virtualenv is created successfully at ~/Workspace/python-virtual-environments/pd
 Project name (pdm): pdm-example
 ...
 ```
+where you can select your Python version for project initialization.
 
 #### 2. Specify `python` position argument in `pdm venv create` command
 
+For example,
 ```bash
 $ pdm venv create --name testenv python3.11
 Virtualenv ~/.local/share/pdm/venvs/pdm-HaUr6rC4-testenv is created successfully
 ```
+
+```bash
+$ pdm venv create --name testenv2 python3.12
+Virtualenv ~/.local/share/pdm/venvs/pdm-HaUr6rC4-testenv2 is created successfully
+```
+
+For more information about `pdm`, please see the [official documentation](https://pdm-project.org/latest/).
+
+Happy coding!
