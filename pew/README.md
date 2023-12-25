@@ -35,6 +35,19 @@ $ pew version
 
 ## How to use it?
 
+Pew is completely shell-agnostic and thus works on bash, zsh, fish, powershell, etc.
+
+#### 1. Create a virtual environment
+
+
+
+#### 2. Activate the virtual environment
+
+#### 3. Manage Python packages
+
+#### 4. Deactivate the virtual environment
+
+#### 4. Remove the virtual environment
 
 
 ## Different Python versions?
