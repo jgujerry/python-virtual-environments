@@ -1,4 +1,4 @@
-# pyenv + virtualenv
+# pyenv-virtualenv
 
 [`pyenv`](https://github.com/pyenv/pyenv) let you manage multiple versions of Python easily. It's simple, unobtrusive, and follows
 the UNIX tradition of single-purpose tools do one thing well.
