@@ -134,9 +134,10 @@ There are two types of configurations: core settings `[tox]`, and per-run enviro
 
 Except for the `tox.ini` configuration, `tox` supports `pyproject.toml` and `setup.cfg` as well. `tox` supports three configuration locations
 prioritized in the following order:
-    1. `tox.ini`
-    2. `pyproject.toml`
-    3. `setup.cfg`
+
+1. `tox.ini`
+2. `pyproject.toml`
+3. `setup.cfg`
 
 
 For more information about `tox`, please refer to the [official documentation](https://tox.wiki/).
