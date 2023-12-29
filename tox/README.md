@@ -39,7 +39,7 @@ $ tox --help
 `tox` is an environment orchestrator, it needs `tox.ini` configuration file to define what tools required to
 setup and execute on your project's test environment. 
 
-#### 1. A minimal configuration file
+#### 1. The default environment
 
 Create `tox.ini` with the following configuration:
 ```ini
@@ -87,7 +87,7 @@ What's happened? Under the work directory, a `.tox` directory was created with t
 
 You can see **py** is the default environment created by tox, and py version is what default in your machine.
 
-#### 2. Define your environment list
+#### 2. Customize the environment list
 
 You can control the environment creation by specifying the `env_list` or `envlist` option
 
@@ -128,7 +128,7 @@ py39: skipped because could not find python interpreter with spec(s): py39
 py39: SKIP ⚠ in 0.02 seconds
 ```
 
-#### 3. More on Configuration
+#### 3. More on `tox` configuration
 
 There are two types of configurations: core settings `[tox]`, and per-run environment settings `[testenv]` and `[testenv:<envname>]`.
 
