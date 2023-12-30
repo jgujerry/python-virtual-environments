@@ -35,13 +35,24 @@ $ tox --help
 
 ## How to use it?
 
+`tox` is an environment orchestrator, it needs `tox.ini` configuration file to define what tools required to setup and execute on your project's test environment. 
 
-`tox` is an environment orchestrator, it needs `tox.ini` configuration file to define what tools required to
-setup and execute on your project's test environment. 
+Except for the `tox.ini` configuration, `tox` supports `pyproject.toml` and `setup.cfg` as well. `tox` supports three configuration locations
+prioritized in the following order:
 
-#### 1. The default environment
+1. `tox.ini`
+2. `pyproject.toml`
+3. `setup.cfg`
 
-Create `tox.ini` with the following configuration:
+
+There are two types of configurations:
+
+* core settings `[tox]`
+* per-run environment settings `[testenv]` and `[testenv:<envname>]`.
+
+#### 1. Create the virtual environment
+
+Create a minimal `tox.ini` with the following configuration:
 ```ini
 [tox]
 skipsdist = true
@@ -87,7 +98,6 @@ What's happened? Under the work directory, a `.tox` directory was created with t
 
 You can see **py** is the default environment created by tox, and py version is what default in your machine.
 
-#### 2. Customize the environment list
 
 You can control the environment creation by specifying the `env_list` or `envlist` option
 
@@ -128,17 +138,78 @@ py39: skipped because could not find python interpreter with spec(s): py39
 py39: SKIP ⚠ in 0.02 seconds
 ```
 
-#### 3. More on `tox` configuration
+#### 2. Activate the virtual environment
 
-There are two types of configurations: core settings `[tox]`, and per-run environment settings `[testenv]` and `[testenv:<envname>]`.
+There is no need to activate the virtual environment with `tox`.
+`tox` is built on top of [`virtualenv`](https://virtualenv.pypa.io/en/latest/) aims to automate and standardize testing in Python.
 
-Except for the `tox.ini` configuration, `tox` supports `pyproject.toml` and `setup.cfg` as well. `tox` supports three configuration locations
-prioritized in the following order:
+When running the command
+```bash
+$ tox
+```
+It'll automatically start the command in virtual environment.
 
-1. `tox.ini`
-2. `pyproject.toml`
-3. `setup.cfg`
+#### 3. Manage Python packages
 
+In the `deps` setting of `[testenv]` and `[testenv:<envname>]`, 
+you can specify the list of Python packages in Python environment hosting tox when running the tox command.
+
+For example,
+
+```ini
+[tox]
+requires =
+    tox>=4
+skipsdist = true
+env_list = lint,type,py310,py311,py312
+
+[testenv]
+description = run unit tests
+deps =
+    pytest>=7
+    pytest-sugar
+commands =
+    pytest {posargs:tests}
+
+[testenv:lint]
+description = run linters
+skip_install = true
+deps =
+    black==22.12
+commands = black {posargs:.}
+
+[testenv:type]
+description = run type checks
+deps =
+    mypy>=0.991
+commands =
+    mypy {posargs:src tests}
+```
+
+#### 4. Deactivate the virtual environment
+
+No need to deactivate the virtual environment.
+
+#### 5. Delete the virtual environment
+
+`tox` does not provide methods to clean up the virtual environments after `tox` runs.
+The reason is that `tox` preserves the virtual environments as cache, the environments will be resused
+when you run `tox` next time, thus saving time.
+
+If you do like to delete the virtual environments after `tox` runs, you could run this command manually:
+```bash
+$ rm -rf .tox
+```
+
+Or setup this command in your tox configuration,
+```ini
+[testenv]
+...
+allowlist_externals = rm
+commands=
+    pytest ...
+    rm -rf {envdir}
+```
 
 For more information about `tox`, please refer to the [official documentation](https://tox.wiki/).
 
