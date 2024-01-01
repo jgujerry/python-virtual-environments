@@ -1,8 +1,7 @@
 # Python Virtual Environments
 
-A beginner's guide on effectively managing Python virtual environments.
-
-*This guide is under development, a series of posts...*
+A beginner's guide on effectively managing Python virtual environments using different tools
+in Python ecosystem.
 
 Popular Python virtual environment management tools:
 * [1] [venv](venv/README.md)
