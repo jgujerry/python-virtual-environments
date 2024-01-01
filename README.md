@@ -17,6 +17,6 @@ Popular Python virtual environment management tools:
 * [10] [pew](pew/README.md)
 * [11] [tox](tox/README.md)
 * [12] [nox](nox/README.md)
-* rye
+* [13] [rye](rye/README.md)
 
 Happy Coding!
