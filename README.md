@@ -53,10 +53,10 @@ Popular Python virtual environment management tools:
 #### 11. tox
 [`tox`](https://tox.wiki/) is a testing tool that automates the process of testing code against multiple Python environments. While it's not primarily a virtual environment manager, it often involves creating and managing isolated environments for testing purposes. The configuration file is `tox.ini`.
 
-#### 12 nox
+#### 12. nox
 [`nox`](https://nox.thea.codes/en/stable/) is a testing automation tool that focuses on making testing in multiple environments easy. Like `tox`, it's not a dedicated virtual environment manager but often involves creating and managing isolated environments for testing. `nox` uses `noxfile.py` as configuration file.
 
-#### 13 rye
+#### 13. rye
 [`rye`](https://github.com/mitsuhiko/rye) is built by [Armin Ronacher](https://github.com/mitsuhiko/rye), it is a personal one-stop-shop for all Python needs, but still an **experimental** package management solution.
 
 
