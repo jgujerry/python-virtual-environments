@@ -3,7 +3,7 @@
 A beginner's guide on effectively managing Python virtual environments using different tools
 in Python ecosystem.
 
-Popular Python virtual environment management tools:
+Popular Python virtual environment management options:
 * [1] [venv](venv/README.md)
 * [2] [virtualenv](virtualenv/README.md)
 * [3] [virtualenvwrapper](virtualenwrapper/README.md)
