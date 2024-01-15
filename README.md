@@ -24,6 +24,13 @@ It's glad that the Python ecosystem offers numerous options for managing virtual
 this abundance may lead to the common question: Which one should I choose? 
 In this section, I aim to share my experience and opinions to guide beginners to make right choices.
 
+#### 1. `venv` is easy and ready to use
+None could be more easy than `venv`, as it is a Python (>=3.3) built-in module, nonthing needs to be installed, just running command `python -m venv` to use it.
+If you simply want to create a virtual environment for your Python project, and don't want to install third party packages for this purpose, then go for it with `venv`.
+
+#### 2. A very popular tool that creates isolated Python environments.
+`virtualenv` instead is an independent library to create isolated Python environments. 
+
 [In progress...]
 
 ## Contact
