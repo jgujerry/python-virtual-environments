@@ -55,9 +55,9 @@ For `pew` users:
 * It is completely shell-agnostic and thus works on bash, zsh, fish, powershell, etc.
 * It is invoked starting with `pew` in commands.
 
-I am Ubuntu and MacOS user with zsh, and I personally like the command style and syntax of `virtualenvwrapper`, and have been using it for years.
-There is no reason for me to switch from `virtualenvwrapper` to `pew` yet. But again, both of them are great, the choice depends on your work environment 
-and personal flavor.
+As a zsh user under both Ubuntu and MacOS, I personally like the command style and syntax of `virtualenvwrapper`, like `mkvirtualenv`, `rmvirtualenv`.
+And I have been using it for years, there is no reason for me to switch from `virtualenvwrapper` to `pew` yet. 
+But again, both of them are great, the choice depends on your work environment and personal flavor.
 
 #### 4. [In progress...]
 
