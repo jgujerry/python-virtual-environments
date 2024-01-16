@@ -42,9 +42,24 @@ Besides, several other popular tools like `virtualenvwrapper`, `pew`, `tox` and 
 `virtualenv` wrappers provide convenient commands to help create and delete virtual environments, otherwise managing the development workflow and making it easier 
 to work on multiple projects without dependency conflicts.
 
-`virtualenvwrapper` and `pew` are popular wrappers built on top of `virtualenv`. 
+`virtualenvwrapper` and `pew` are popular wrappers built on top of `virtualenv`, and both of the are great choices. The `workon` commands are really convenient to help
+switch environments when working on multiple Python projects.
 
-[In progress...]
+For `virtualenvwrapper`:
+* `virtualenvwrapper` automated tests run under these shells on OS X and Linux with bash and zsh. 
+* Windows users need to usea separately distributed re-implementation iwth `virtualenvwrapper-win`.
+* `virtualenvwrapper` is a set of shell functions defined in Bourne shell compatible syntax.
+
+For `pew` users:
+* It would luanch a subshell when activating the environment.
+* It is completely shell-agnostic and thus works on bash, zsh, fish, powershell, etc.
+* It is invoked starting with `pew` in commands.
+
+I am Ubuntu and MacOS user with zsh, and I personally like the command style and syntax of `virtualenvwrapper`, and have been using it for years.
+There is no reason for me to switch from `virtualenvwrapper` to `pew` yet. But again, both of them are great, the choice depends on your work environment 
+and personal flavor.
+
+#### 4. [In progress...]
 
 ## Contact
 
