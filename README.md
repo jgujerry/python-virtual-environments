@@ -20,16 +20,21 @@ Popular Python virtual environment management options:
 
 ## Your Choice?
 
-It's glad that the Python ecosystem offers numerous options for managing virtual environments. Yet, for beginners, 
+It's glad that the Python ecosystem offers numerous options for managing virtual environments and dependencies. Yet, for beginners, 
 this abundance may lead to the common question: Which one should I choose? 
 In this section, I aim to share my experience and opinions to guide beginners to make right choices.
 
 #### 1. `venv` is easy and ready to use
 None could be more easy than `venv`, as it is a Python (>=3.3) built-in module, nonthing needs to be installed, just running command `python -m venv` to use it.
-If you simply want to create a virtual environment for your Python project, and don't want to install third party packages for this purpose, then go for it with `venv`.
+If you simply want to create a virtual environment for your Python project, and don't want to install third party packages for this purpose, then go for with `venv`.
+As a beginner, you could start with `venv` and `pip`, where use `venv` to create virtual environment, and use `pip` to manage environment dependencies.
 
-#### 2. A very popular tool that creates isolated Python environments.
-`virtualenv` instead is an independent library to create isolated Python environments. 
+#### 2. `virtualenv` is a very popular tool
+`virtualenv` instead is an independent library to create isolated Python environments, and a subset of `virtualenv` has been integrated into the standard library under
+the `venv` module. It's lightweight, fast, and very easy to use as well. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it. 
+
+Besides, several other popular tools like `virtualenvwrapper`, `pew`, `tox` and `nox` are depending on `virtualenv` and build abstractions on top of it.
+
 
 [In progress...]
 
