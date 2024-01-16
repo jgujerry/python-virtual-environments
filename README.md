@@ -59,7 +59,9 @@ As a zsh user under both Ubuntu and MacOS, I personally like the command style a
 And I have been using it for years, there is no reason for me to switch from `virtualenvwrapper` to `pew` yet. 
 But again, both of them are great, the choice depends on your work environment and personal flavor.
 
-#### 4. [In progress...]
+#### 4. `tox` and `nox` are for automated testing
+
+[In progress...]
 
 ## Contact
 
