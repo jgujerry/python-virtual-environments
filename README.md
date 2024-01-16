@@ -33,9 +33,17 @@ Please notice that `venv` does not support older versions of Python (<3.3 or 2.x
 
 #### 2. `virtualenv` is a very popular tool
 `virtualenv` instead is an independent library to create isolated Python environments, and a subset of `virtualenv` has been integrated into the standard library under
-the `venv` module. It's lightweight, fast, and very easy to use as well. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it. With `virtualenv`, you also need to use `pip` to manage environment dependencies.
+the `venv` module. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it. 
+Compared to `venv`, here are some advantages of `virtualenv`:
+* it is faster
+* it is extendable
+* it can create environments for any python versions.
+* it is upgrade-able via `pip`.
+* it has rich programmatic API.
 
 Besides, several other popular tools like `virtualenvwrapper`, `pew`, `tox` and `nox` are depending on `virtualenv` and build abstractions on top of it.
+
+By the way, with `virtualenv`, you also need to use `pip` to manage environment dependencies.
 
 #### 3. Use wrappers to make virtualenv easier
 
