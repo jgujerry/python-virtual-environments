@@ -29,12 +29,20 @@ None could be more easy than `venv`, as it is a Python (>=3.3) built-in module, 
 If you simply want to create a virtual environment for your Python project, and don't want to install third party packages for this purpose, then go for with `venv`.
 As a beginner, you could start with `venv` and `pip`, where use `venv` to create virtual environment, and use `pip` to manage environment dependencies.
 
+Please notice that `venv` does not support older versions of Python (<3.3 or 2.x), you will need to a third-party tool to help in this case.
+
 #### 2. `virtualenv` is a very popular tool
 `virtualenv` instead is an independent library to create isolated Python environments, and a subset of `virtualenv` has been integrated into the standard library under
-the `venv` module. It's lightweight, fast, and very easy to use as well. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it. 
+the `venv` module. It's lightweight, fast, and very easy to use as well. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it. With `virtualenv`, you also need to use `pip` to manage environment dependencies.
 
 Besides, several other popular tools like `virtualenvwrapper`, `pew`, `tox` and `nox` are depending on `virtualenv` and build abstractions on top of it.
 
+#### 3. Use wrappers to make virtualenv easier
+
+`virtualenv` wrappers provide convenient commands to help create and delete virtual environments, otherwise managing the development workflow and making it easier 
+to work on multiple projects without dependency conflicts.
+
+`virtualenvwrapper` and `pew` are popular wrappers built on top of `virtualenv`. 
 
 [In progress...]
 
