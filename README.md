@@ -24,16 +24,16 @@ It's glad that the Python ecosystem offers numerous options for managing virtual
 this abundance may lead to the common question: Which one should I choose? 
 In this section, I aim to share my experience and opinions to guide beginners to make right choices.
 
-#### 1. `venv` is easy and ready to use
+#### 1. Want to start an virtual environment in quick?
 None could be more easy than `venv`, as it is a Python (>=3.3) built-in module, nonthing needs to be installed, just running command `python -m venv` to use it.
 If you simply want to create a virtual environment for your Python project, and don't want to install third party packages for this purpose, then go for with `venv`.
 As a beginner, you could start with `venv` and `pip`, where use `venv` to create virtual environment, and use `pip` to manage environment dependencies.
 
 Please notice that `venv` does not support older versions of Python (<3.3 or 2.x), you will need to a third-party tool to help in this case.
 
-#### 2. `virtualenv` is a very popular tool
+#### 2. `virtualenv` + `pip` would be a popular option to start with.
 `virtualenv` instead is an independent library to create isolated Python environments, and a subset of `virtualenv` has been integrated into the standard library under
-the `venv` module. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it. 
+the `venv` module. If you try to use a third-party library to manage Pyton virtual environments, then I highly recommend learning and trying with it.
 Compared to `venv`, here are some advantages of `virtualenv`:
 * it is faster
 * it is extendable
@@ -43,7 +43,6 @@ Compared to `venv`, here are some advantages of `virtualenv`:
 
 Besides, several other popular tools like `virtualenvwrapper`, `pew`, `tox` and `nox` are depending on `virtualenv` and build abstractions on top of it.
 
-By the way, with `virtualenv`, you also need to use `pip` to manage environment dependencies.
 
 #### 3. Use wrappers to make virtualenv easier
 
@@ -58,7 +57,7 @@ For `virtualenvwrapper`:
 * Windows users need to usea separately distributed re-implementation iwth `virtualenvwrapper-win`.
 * `virtualenvwrapper` is a set of shell functions defined in Bourne shell compatible syntax.
 
-For `pew` users:
+For `pew`:
 * It would luanch a subshell when activating the environment.
 * It is completely shell-agnostic and thus works on bash, zsh, fish, powershell, etc.
 * It is invoked starting with `pew` in commands.
@@ -67,9 +66,21 @@ As a zsh user under both Ubuntu and MacOS, I personally like the command style a
 And I have been using it for years, there is no reason for me to switch from `virtualenvwrapper` to `pew` yet. 
 But again, both of them are great, the choice depends on your work environment and personal flavor.
 
-#### 4. `tox` and `nox` are for automated testing
+#### 4. Look for automated testing under multiple Python versions?
 
-[In progress...]
+TODO:
+
+#### 5. How do you manage multiple Python versions on your machine?
+
+TODO:
+
+#### 5. Do you want dependency management with the tool?
+
+TODO:
+
+#### 6. Just try something new with experimental features
+
+TODO:
 
 ## Contact
 
