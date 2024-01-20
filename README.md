@@ -68,17 +68,31 @@ But again, both of them are great, the choice depends on your work environment a
 
 #### 4. Look for automated testing under multiple Python versions?
 
+Discuss `tox` and `nox`.
+
 TODO:
 
 #### 5. How do you manage multiple Python versions on your machine?
+
+Use `pyenv` manage multiple Python versions on your machine.
 
 TODO:
 
 #### 5. Do you want dependency management with the tool?
 
+`pipenv`, `poetry` `hatch`, `pdm`, which one to use.
+
 TODO:
 
-#### 6. Just try something new with experimental features
+#### 6. An operating system–agnostic environment & package manager
+
+`conda` is great for data science. Especially for geospatial and all dependencies.
+
+TODO:
+
+#### 7. Just try something new with experimental features
+
+Discuss `rye` here.
 
 TODO:
 
