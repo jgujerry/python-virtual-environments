@@ -68,9 +68,14 @@ But again, both of them are great, the choice depends on your work environment a
 
 #### 4. Look for automated testing under multiple Python versions?
 
-Discuss `tox` and `nox`.
+`tox` is a popular tool in the Python ecosystem used for testing and building projects across different environments. 
+It is particularly useful for ensuring that your Python project works consistently across various Python versions and environments.
+It uses a declarative configuration file, typically named `tox.ini`, where you specify the testing environments, dependencies, and commands. 
 
-TODO:
+`nox` is another testing and automation tool for Python projects. Unlike `tox`, `nox` uses a code-based configuration approach, named `noxfile.py`
+
+`tox` and `nox` serve similar purposes but differ in their configuration styles and approaches.
+The choice between them depends on the preferences and requirements of the project and its developers.
 
 #### 5. How do you manage multiple Python versions on your machine?
 
