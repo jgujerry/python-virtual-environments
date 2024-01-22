@@ -90,9 +90,14 @@ adds support for managing virtual environments, allowing you to create and switc
 
 #### 6. Do you want dependency management with the tool?
 
-`pipenv`, `poetry` `hatch`, `pdm`, which one to use.
+With `venv` and `virtualenv`, you can create virtual environments, but need `pip` to help manage the dependencies.
 
-TODO:
+`pipenv`, `poetry` `hatch`, `pdm`, these tools not only provides the support of Python environment creation, but also contains functionalities that help
+manage Python dependencies.
+
+* `hatch`, `poetry`, and `pdm` utilize the `pyproject.toml` file to manage dependencies, where `pyproject.toml` is is the specified file format of PEP 518 which contains the build system requirements of Python projects.
+* `pipenv` use `Pipfile` and `Pipefile.lock` to manage the depdendencies. At the time of writing, there is an issue open for discussing `Pipfile` and `pyproject.toml` - https://github.com/pypa/pipenv/discussions/5673
+
 
 #### 7. An operating system–agnostic environment & package manager
 
