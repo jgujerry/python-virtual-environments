@@ -88,13 +88,13 @@ but it allows you to switch between different versions of Python on same machine
 adds support for managing virtual environments, allowing you to create and switch between virtual environments associated with specific Python versions.
 
 
-#### 5. Do you want dependency management with the tool?
+#### 6. Do you want dependency management with the tool?
 
 `pipenv`, `poetry` `hatch`, `pdm`, which one to use.
 
 TODO:
 
-#### 6. An operating system–agnostic environment & package manager
+#### 7. An operating system–agnostic environment & package manager
 
 `conda` works consistently across various operating systems, including Linux, macOS, and Windows. 
 This agnostic nature makes it a versatile tool for managing environments and packages in a way 
@@ -106,7 +106,7 @@ Installing and managing these dependencies directly on a machine can be a comple
 particularly when aiming to manage different versions for optimal functionality. 
 This is where `conda` shines as an indispensable tool for geospatial data science.
 
-#### 7. Just try something new with experimental features
+#### 8. Just try something new with experimental features
 
 `rye` originated as a personal project by Armin, driven by his desire to establish a one-stop-shop solution for all Python-related requirements.
 `rye` is an experimental endeavour to build a new type of packaging experience to Python inspired by `rustup` and `cargo` from Rust.
