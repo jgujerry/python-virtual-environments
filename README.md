@@ -79,9 +79,14 @@ The choice between them depends on the preferences and requirements of the proje
 
 #### 5. How do you manage multiple Python versions on your machine?
 
-Use `pyenv` manage multiple Python versions on your machine.
+Typically, you lack significant control over the versions of your system Python, the Python version pre-installed with operating systems such as Linux and MacOS. 
+These pre-installed Python versions often lag behind the latest releases. 
+Installing and effortlessly switching between multiple Python versions on your machine can be challenging.
 
-TODO:
+`pyenv` is designed to manage multiple versions of Python on your machine. It's not specifically designed for creating virtual environments, 
+but it allows you to switch between different versions of Python on same machine easily. `pyenv-virtualenv` is an extension for `pyenv` that 
+adds support for managing virtual environments, allowing you to create and switch between virtual environments associated with specific Python versions.
+
 
 #### 5. Do you want dependency management with the tool?
 
