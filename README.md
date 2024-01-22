@@ -102,9 +102,10 @@ TODO:
 
 #### 7. Just try something new with experimental features
 
-Discuss `rye` here.
-
-TODO:
+`rye` originated as a personal project by Armin, driven by his desire to establish a one-stop-shop solution for all Python-related requirements.
+`rye` is an experimental endeavour to build a new type of packaging experience to Python inspired by `rustup` and `cargo` from Rust.
+While I haven't personally incorporated it into my projects, rye has gained popularity on GitHub. If you're open to exploring innovative tools, 
+consider giving it a try.
 
 ## Contact
 
