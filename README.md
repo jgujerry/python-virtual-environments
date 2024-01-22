@@ -96,9 +96,15 @@ TODO:
 
 #### 6. An operating system–agnostic environment & package manager
 
-`conda` is great for data science. Especially for geospatial and all dependencies.
+`conda` works consistently across various operating systems, including Linux, macOS, and Windows. 
+This agnostic nature makes it a versatile tool for managing environments and packages in a way 
+that is independent of the underlying operating system. 
 
-TODO:
+`conda` is a popular choice for data science and various other fields. For example, 
+GDAL (Geospatial Data Abstraction Library), which is crucial for tasks like spatial data processing and analysis. 
+Installing and managing these dependencies directly on a machine can be a complex and challenging process, 
+particularly when aiming to manage different versions for optimal functionality. 
+This is where `conda` shines as an indispensable tool for geospatial data science.
 
 #### 7. Just try something new with experimental features
 
@@ -106,6 +112,7 @@ TODO:
 `rye` is an experimental endeavour to build a new type of packaging experience to Python inspired by `rustup` and `cargo` from Rust.
 While I haven't personally incorporated it into my projects, rye has gained popularity on GitHub. If you're open to exploring innovative tools, 
 consider giving it a try.
+
 
 ## Contact
 
