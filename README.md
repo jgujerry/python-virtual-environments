@@ -87,7 +87,6 @@ Installing and effortlessly switching between multiple Python versions on your m
 but it allows you to switch between different versions of Python on same machine easily. `pyenv-virtualenv` is an extension for `pyenv` that 
 adds support for managing virtual environments, allowing you to create and switch between virtual environments associated with specific Python versions.
 
-
 #### 6. Do you want dependency management with the tool?
 
 With `venv` and `virtualenv`, you can create virtual environments, but need `pip` to help manage the dependencies.
@@ -97,7 +96,6 @@ manage Python dependencies.
 
 * `hatch`, `poetry`, and `pdm` utilize the `pyproject.toml` file to manage dependencies, where `pyproject.toml` is is the specified file format of PEP 518 which contains the build system requirements of Python projects.
 * `pipenv` use `Pipfile` and `Pipefile.lock` to manage the depdendencies. At the time of writing, there is an issue open for discussing `Pipfile` and `pyproject.toml` - https://github.com/pypa/pipenv/discussions/5673
-
 
 #### 7. An operating system–agnostic environment & package manager
 
@@ -111,12 +109,17 @@ Installing and managing these dependencies directly on a machine can be a comple
 particularly when aiming to manage different versions for optimal functionality. 
 This is where `conda` shines as an indispensable tool for geospatial data science.
 
+However, `conda` environment is relatively heavy, and the size of the environment would be larger than environments created by using other tools.
+
 #### 8. Just try something new with experimental features
 
 `rye` originated as a personal project by Armin, driven by his desire to establish a one-stop-shop solution for all Python-related requirements.
 `rye` is an experimental endeavour to build a new type of packaging experience to Python inspired by `rustup` and `cargo` from Rust.
 While I haven't personally incorporated it into my projects, rye has gained popularity on GitHub. If you're open to exploring innovative tools, 
 consider giving it a try.
+
+Therefore, there is not a single way to handle environment and dependencies in Python projects, as none of them is perfect
+You need to give a try on these different tools, and find the best flavor for you and your project.
 
 
 ## Contact
