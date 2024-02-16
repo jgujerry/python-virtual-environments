@@ -115,6 +115,12 @@ Using virtualenv: ~/.cache/pypoetry/virtualenvs/myapp-Op_t6Wui-py3.12
 * MaxOS: `~/Library/Caches/pypoetry/virtualenvs`
 * Windows: `C:\Users\<username>\AppData\Local\pypoetry\Cache\virtualenvs`, or `%LOCALAPPDATA%\pypoetry\Cache\virtualenvs`
 
+If you'd like to have the virtual environment `.venv` created inside your project, then run the following command:
+
+```bash
+$ poetry config virtualenvs.in-project true
+```
+
 
 #### 2. Activate the virtual environment
 
