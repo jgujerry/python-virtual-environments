@@ -163,6 +163,12 @@ To remove a dependency from the project,
 $ poetry remove <python-package>
 ```
 
+If you want to export the dependencies into `requirements.txt`, then run the following command:
+
+```bash
+$ poetry export --without-hashes --format=requirements.txt > requirements.txt
+```
+
 
 #### 4. Deactivate the virtual environment
 
