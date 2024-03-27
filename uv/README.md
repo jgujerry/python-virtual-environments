@@ -121,3 +121,24 @@ Deactivate the virtual environment and remove the `.venv` directory,
 $ rm -r .venv
 ```
 
+
+## Different Python versions?
+
+When I created the virtual environment by running `uv venv`, it created an environment of Python 3.10.
+
+As I have multiple Python versions installed on my machine, what's about if I want to create a virtual
+environment with different Python versions?
+
+The answer is to use `--python` option,
+
+```bash
+$ uv venv --python python3.12
+```
+
+```bash
+$ uv venv --python python3.11
+```
+
+For more information about `uv`, please see the github repository - https://github.com/astral-sh/uv.
+
+Happy coding!
