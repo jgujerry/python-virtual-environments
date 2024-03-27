@@ -119,8 +119,8 @@ However, `conda` environment is relatively heavy, and the size of the environmen
 While I haven't personally incorporated it into my projects, rye has gained popularity on GitHub. If you're open to exploring innovative tools, 
 consider giving it a try.
 
-`uv` takes stewardship of `Rye`, and will be expanded into a unified successor project, to fulfill our shared vision for Python packaging. `uv` 
-is an extremely fast Python package resolver and installer, written in Rust. `uv` is designed as a drop-in replacement for `pip` and `pip-tools`, 
+`uv` takes stewardship of `Rye`, and will be expanded into a unified successor project, to fulfill the shared vision for Python packaging with `rye`. 
+`uv` is an extremely fast Python package resolver and installer, written in Rust. `uv` is designed as a drop-in replacement for `pip` and `pip-tools`, 
 and is ready for production use today in projects built around those workflows. I've applied `uv` in my projects, 
 and it performs remarkably fast, living up to its advertised speed.
 
