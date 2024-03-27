@@ -17,6 +17,7 @@ Popular Python virtual environment management options:
 * [11] [tox](tox/README.md)
 * [12] [nox](nox/README.md)
 * [13] [rye](rye/README.md)
+* [14] [uv](uv/README.md)
 
 ## Your Choice?
 
@@ -111,15 +112,22 @@ This is where `conda` shines as an indispensable tool for geospatial data scienc
 
 However, `conda` environment is relatively heavy, and the size of the environment would be larger than environments created by using other tools.
 
-#### 8. Just try something new with experimental features
+#### 8. New Python packaging and tooling packages?
 
 `rye` originated as a personal project by Armin, driven by his desire to establish a one-stop-shop solution for all Python-related requirements.
 `rye` is an experimental endeavour to build a new type of packaging experience to Python inspired by `rustup` and `cargo` from Rust.
 While I haven't personally incorporated it into my projects, rye has gained popularity on GitHub. If you're open to exploring innovative tools, 
 consider giving it a try.
 
-Therefore, there is not a single way to handle environment and dependencies in Python projects, as none of them is perfect
-You need to give a try on these different tools, and find the best flavor for you and your project.
+`uv` takes stewardship of `Rye`, and will be expanded into a unified successor project, to fulfill our shared vision for Python packaging. `uv` 
+is an extremely fast Python package resolver and installer, written in Rust. `uv` is designed as a drop-in replacement for `pip` and `pip-tools`, 
+and is ready for production use today in projects built around those workflows. I've applied `uv` in my projects, 
+and it performs remarkably fast, living up to its advertised speed.
+
+
+#### Summary
+There isn't a one-size-fits-all solution for managing environments and dependencies in Python projects, as each has its own strengths and weaknesses. 
+It's essential to try with various tools to discover the one that best suits your needs and aligns with your project's requirements.
 
 
 ## Contact
