@@ -55,7 +55,7 @@ switch environments when working on multiple Python projects with different depe
 
 For `virtualenvwrapper`:
 * `virtualenvwrapper` automated tests run under these shells on OS X and Linux with bash and zsh. 
-* Windows users need to usea separately distributed re-implementation iwth `virtualenvwrapper-win`.
+* Windows users need to usea separately distributed re-implementation with `virtualenvwrapper-win`.
 * `virtualenvwrapper` is a set of shell functions defined in Bourne shell compatible syntax.
 
 For `pew`:
