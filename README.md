@@ -11,13 +11,14 @@ Popular Python virtual environment management options:
 * [5] [poetry](poetry/README.md)
 * [6] [pyenv-virtualenv](pyenv-virtualenv/README.md)
 * [7] [conda](conda/README.md)
-* [8] [hatch](hatch/README.md)
-* [9] [pdm](pdm/README.md)
-* [10] [pew](pew/README.md)
-* [11] [tox](tox/README.md)
-* [12] [nox](nox/README.md)
-* [13] [rye](rye/README.md)
-* [14] [uv](uv/README.md)
+* [8] [mamba](mamba/README.md)
+* [9] [hatch](hatch/README.md)
+* [10] [pdm](pdm/README.md)
+* [11] [pew](pew/README.md)
+* [12] [tox](tox/README.md)
+* [13] [nox](nox/README.md)
+* [14] [rye](rye/README.md)
+* [15] [uv](uv/README.md)
 
 ## Your Choice?
 
