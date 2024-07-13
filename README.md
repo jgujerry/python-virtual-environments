@@ -110,7 +110,10 @@ Installing and managing these dependencies directly on a machine can be a comple
 particularly when aiming to manage different versions for optimal functionality. 
 This is where `conda` shines as an indispensable tool for geospatial data science.
 
-However, `conda` environment is relatively heavy, and the size of the environment would be larger than environments created by using other tools.
+However, `conda` environment is relatively heavy, and the size of the environment would be larger than environments created by using other tools. And, it's common that installing packages via `conda` is slow or fails because `conda` is unable to resolve dependencies.
+
+`mamba` is a reimplementation and drop-in replacement for `conda`, designed to provide improved performance and efficiency. One of the key advantages of `mamba` is its speed; it is generally faster and more efficient at resolving dependencies compared to `conda`. This can significantly reduce the time required for package installation and environment management. The commands and usage of `mamba` are almost identical to those of `conda`, making it easy for users to switch without having to learn new syntax or commands.
+
 
 #### 8. New Python packaging and tooling packages?
 
