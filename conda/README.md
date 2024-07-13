@@ -151,7 +151,7 @@ List the virtual environments on your machine,
 $ conda env list
 ```
 
-The choose your virtual environment to activate by this command,
+Then choose your virtual environment to activate by this command,
 
 ```bash
 $ conda activate envname
