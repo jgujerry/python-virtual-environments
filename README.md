@@ -26,7 +26,7 @@ It's glad that the Python ecosystem offers numerous options for managing virtual
 this abundance may lead to the common question: Which one should I choose? 
 In this section, I aim to share my experience and opinions to guide beginners to make right choices.
 
-#### 1. Want to start an virtual environment in quick?
+#### 1. Want to start a virtual environment in quick?
 None could be more easy than `venv`, as it is a Python (>=3.3) built-in module, nonthing needs to be installed, just running command `python -m venv` to use it.
 If you simply want to create a virtual environment for your Python project, and don't want to install third party packages for this purpose, then go for with `venv`.
 As a beginner, you could start with `venv` and `pip`, where use `venv` to create virtual environment, and use `pip` to manage environment dependencies.
@@ -99,7 +99,7 @@ manage Python dependencies.
 * `hatch`, `poetry`, and `pdm` utilize the `pyproject.toml` file to manage dependencies, where `pyproject.toml` is is the specified file format of PEP 518 which contains the build system requirements of Python projects.
 * `pipenv` use `Pipfile` and `Pipefile.lock` to manage the depdendencies. At the time of writing, there is an issue open for discussing `Pipfile` and `pyproject.toml` - https://github.com/pypa/pipenv/discussions/5673
 
-#### 7. An operating system–agnostic environment & package manager
+#### 7. An operation system–agnostic environment & package manager
 
 `conda` works consistently across various operating systems, including Linux, macOS, and Windows. 
 This agnostic nature makes it a versatile tool for managing environments and packages in a way 
