@@ -12,13 +12,14 @@ Popular Python virtual environment management options:
 * [6] [pyenv-virtualenv](pyenv-virtualenv/README.md)
 * [7] [conda](conda/README.md)
 * [8] [mamba](mamba/README.md)
-* [9] [hatch](hatch/README.md)
-* [10] [pdm](pdm/README.md)
-* [11] [pew](pew/README.md)
-* [12] [tox](tox/README.md)
-* [13] [nox](nox/README.md)
-* [14] [rye](rye/README.md)
-* [15] [uv](uv/README.md)
+* [9] [pixi](pixi/README.md)
+* [10] [hatch](hatch/README.md)
+* [11] [pdm](pdm/README.md)
+* [12] [pew](pew/README.md)
+* [13] [tox](tox/README.md)
+* [14] [nox](nox/README.md)
+* [15] [rye](rye/README.md)
+* [16] [uv](uv/README.md)
 
 ## Your Choice?
 
@@ -114,6 +115,8 @@ This is where `conda` shines as an indispensable tool for geospatial data scienc
 However, `conda` environment is relatively heavy, and the size of the environment would be larger than environments created by using other tools. Also, it's common that installing packages via `conda` is slow.
 
 `mamba` is a reimplementation and drop-in replacement for `conda`, designed in `C++` to provide improved performance and efficiency. One of the key advantages of `mamba` is its speed; it is generally faster and more efficient at resolving dependencies compared to `conda`. This can significantly reduce the time required for package installation and environment management. The commands and usage of `mamba` are almost identical to those of `conda`, making it easy for users to switch without having to learn new syntax or commands.
+
+`pixi`, written in Rust, is a modern, cross-platform, multi-language package manager and workflow tool built on the fundation of the `conda` ecosystem. This is especially useful when you are working with multiple Python interpreters and bindings to C and C++ libraries. For example, GDAL from `PyPI` does not have binary C dependencies, but the `conda` package does. On the other hand, some packages are only available through `PyPI`, which `pixi` can also install for you, best of both world. Besides, it introduces a project-centric approach rather than focusing on solely on environments, like what `conda` and `mamba` do. This shift towards projects offers a more organized and efficient way to manage dependencies and run code, tailored to modern development practices.
 
 
 #### 8. New Python packaging and tooling packages?
